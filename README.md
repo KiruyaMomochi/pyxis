@@ -27,6 +27,7 @@ $ sudo systemctl restart slurmd
 
 #### With a deb package
 ```console
+$ sudo apt install git-buildpackage build-essential devscript equivs
 $ make orig
 $ make deb
 $ sudo dpkg -i ../nvslurm-plugin-pyxis_*_amd64.deb

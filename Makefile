@@ -49,7 +49,7 @@ orig: clean
 	tar -caf ../nvslurm-plugin-pyxis_$(VERSION).orig.tar.xz --owner=root --group=root --exclude=.git .
 
 deb: clean
-	debuild -us -uc -G -i -tc
+	gbp buildpackage -us -uc -G -i -tc
 
 rpm: clean
 	test -e $(ARCH) || ln -s . $(ARCH)
